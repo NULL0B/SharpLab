@@ -37,10 +37,6 @@
     <Folder Include="TestData\" />
   </ItemGroup>
 
-  <Target Name="Test" BeforeTargets="BeforeBuild">
-    <Error Text="APPVEYOR=$(APPVEYOR), DefineConstants=$(DefineConstants)" />
-  </Target>
-
   <!--  https://github.com/dotnet/sdk/issues/1458#issuecomment-401497095 -->
   <Target Name="_ResolveCopyLocalNuGetPackageXmls" Condition="$(CopyLocalLockFileAssemblies) == true" AfterTargets="ResolveReferences">
     <ItemGroup>
