@@ -15,7 +15,7 @@ static class C {
 #=>
 
 ; Desktop CLR v<IGNORE> on x86
-        
+
 C.M(Int32)
     L0000: push ebp
     L0001: mov ebp, esp
@@ -26,7 +26,7 @@ C.M(Int32)
     L0013: call dword [0x<IGNORE>]
     L0019: pop ebp
     L001a: ret
-        
+
 C.Foo(Int32)
     L0000: push ebp
     L0001: mov ebp, esp
@@ -72,7 +72,7 @@ C.Foo(Int32)
     L0077: pop edi
     L0078: pop ebp
     L0079: ret
-        
+
 C+<Foo>d__1.MoveNext()
     L0000: push ebp
     L0001: mov ebp, esp
@@ -104,7 +104,7 @@ C+<Foo>d__1.MoveNext()
     L0053: mov esp, ebp
     L0055: pop ebp
     L0056: ret
-        
+
 C+<Foo>d__1.SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
     L0000: cmp [ecx], al
     L0002: add ecx, 0x8
